@@ -1,7 +1,6 @@
 class Panko < Formula
   desc "Self-service infrastructure API powered by OpenTofu and Kubernetes"
   homepage "https://github.com/hingst-it/panko"
-  version "0.0.1"
   license "Apache-2.0"
 
   on_macos do
