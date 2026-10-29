@@ -5,23 +5,23 @@ class Panko < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/hingst-it/panko/releases/download/v0.0.1/panko_0.0.1_darwin_arm64.tar.gz"
-      sha256 "0f51507320626d31ba2a903b35e17efba6cf5e13279dfc0d8d79a7611cd6b100"
+      url "https://github.com/hingst-it/panko/releases/download/v0.0.2/panko_0.0.2_darwin_arm64.tar.gz"
+      sha256 "397a0cdae26e098d609aa835ada9b6497be27a55ecca369d1119c06a9fe59024"
     end
     on_intel do
-      url "https://github.com/hingst-it/panko/releases/download/v0.0.1/panko_0.0.1_darwin_amd64.tar.gz"
-      sha256 "056d3f6d18105bf285d7e0a082ac09a20d78547fee899d98d5bfa18536e61585"
+      url "https://github.com/hingst-it/panko/releases/download/v0.0.2/panko_0.0.2_darwin_amd64.tar.gz"
+      sha256 "fa881ce63acc8ca5e4a49d9bdc43f527231951e93053711f461bad6312dac40c"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/hingst-it/panko/releases/download/v0.0.1/panko_0.0.1_linux_arm64.tar.gz"
-      sha256 "2a723bb60e595b904d9062cdf65367144afade7af7c241a7cc76a4f9e392caa8"
+      url "https://github.com/hingst-it/panko/releases/download/v0.0.2/panko_0.0.2_linux_arm64.tar.gz"
+      sha256 "f94f7e36e382b5e46168acad86a5ad46ce475972c2a0ed0c618272cfeca662d3"
     end
     on_intel do
-      url "https://github.com/hingst-it/panko/releases/download/v0.0.1/panko_0.0.1_linux_amd64.tar.gz"
-      sha256 "abcba6a4812bc38770567fdb34e8aafa2dcb46e4187a7bbe32263655def71032"
+      url "https://github.com/hingst-it/panko/releases/download/v0.0.2/panko_0.0.2_linux_amd64.tar.gz"
+      sha256 "f751adac0ec5d60c02f7a6d4fe0bfbc8c60f754509b8c9857cc46f354dbed815"
     end
   end
 
@@ -30,7 +30,7 @@ class Panko < Formula
   end
 
   test do
-    assert_equal "panko v0.0.1", shell_output("#{bin}/panko --version").strip
-    assert_equal "panko-admin v0.0.1", shell_output("#{bin}/panko-admin --version").strip
+    assert_equal "panko v0.0.2", shell_output("#{bin}/panko --version").strip
+    assert_equal "panko-admin v0.0.2", shell_output("#{bin}/panko-admin --version").strip
   end
 end
